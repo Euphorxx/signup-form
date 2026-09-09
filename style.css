@@ -97,6 +97,13 @@ input {
 
 input[type='password']:user-invalid {
     border: red 1.5px solid;
+    content:"Use at least 8 characters with a letter and a number."
+}
+
+label[for='pass']::after, label[for='confirm-pass']::after {
+ content:" *";
+ color:red;
+ font-size:20px;
 }
 
 input:focus {
