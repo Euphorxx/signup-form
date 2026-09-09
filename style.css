@@ -81,6 +81,7 @@ input {
     font-size: 25px;
     margin-top:30px;
     margin-inline: 30px;
+    letter-spacing: 1.2px;
 }
 
 .form-main label {
@@ -116,6 +117,12 @@ button {
     font-size: 30px;
     text-align: center;
     letter-spacing: 0.2px;
+    cursor: pointer;
+    transition: 0s;
+}
+
+button:focus {
+    transform: scale(0.95)
 }
 
 .btn-section a {
@@ -124,6 +131,7 @@ button {
     letter-spacing: 0.2px;
     align-self: end;
     padding-left:8px;
+    cursor: pointer;
 }
 
 .btn-section a, .btn-section p {
