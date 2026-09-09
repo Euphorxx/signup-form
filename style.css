@@ -99,7 +99,8 @@ input[type='password']:user-invalid {
 }
 
 input:focus {
-    border: #b897f9 1.5px solid !important
+    outline: none;
+    border: #864aff 1.5px solid;
 }
 
 button {
