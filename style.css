@@ -140,6 +140,7 @@ button:focus {
     align-self: end;
     padding-left:8px;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .btn-section a, .btn-section p {
