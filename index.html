@@ -16,6 +16,40 @@
         </div>
         <div class="form-main">
             <p>Fancy a little something in your inbox? We won’t take you for granite.</p>
+        
+            <form method="post">
+                <fieldset>
+                    <label for="first-name" >First Name</label>
+                    <input type="text" id="first-name" name="firstName">
+                    <label for="last-name" >Last Name</label>
+                    <input type="text" id="last-name" name="lastName">
+                </fieldset>
+
+                <fieldset>
+                    <label for="email" >E-mail</label>
+                    <input type="email" id="email" name="userEmail">
+                    <label for="phone-num" >Phone Number</label>
+                    <input type="tel" id="phone-num" name="phoneNum">
+                </fieldset>
+                
+                <fieldset>
+                    <label for="pass" >Password</label>
+                    <input required pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$" type="password" id="pass" name="userPassword">
+                    <label for="confirm-pass" >Confirm Password</label>
+                    <input required pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$" type="password" id="confirm-pass" name="confirmPass">
+                    
+                    <!-- Source for regex pattern - https://stackoverflow.com/a/21456918 -->
+                </fieldset>
+
+                <div class="btn-section">
+                    <button type="submit">Sign up</button>
+
+                    <div class="login">
+                        <p>Already have an account?</p>
+                        <a>Log in</a>
+                    </div>
+                </div>
+            </form>
         </div>
             <img class="amethyst" src="images/amethyst.png">
     </div>

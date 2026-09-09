@@ -5,10 +5,10 @@
 
 body {
     display: flex;
-    flex-direction: row;
     background-color: #2b0955;
     font-family: 'Museum Bible', serif;
     font-weight: 500;
+    position: relative;
 }
 
 @font-face {
@@ -25,36 +25,128 @@ body {
     height: 100vh;
 }
 
-.form {
-    width:60vw
-}
-
 .logo-name {
-    margin-left: 60px;
-    margin-top: 40px;
+    margin-left: 50px;
+    margin-top: 20px;
 }
 
 .logo {
-    position: relative;
-    width:100px;
-    top:10px;
+    width:75px;
+    margin-top:10px;
 }
 
 .brand {
-    width:560px;
+    width:400px;
 }
 
 .amethyst {
     width:200px;
-    position: fixed;
+    position: absolute;
     bottom: 0px;
     right:30px;
 }
 
 .form-section {
     color: #fafafa;
+    width:60vw;
+}
+
+.form-main {
+    justify-self: center;
+    flex-direction: column;
+    font-size: 30px;
+    font-weight: 500;
+
+}
+
+.form {
+    width: calc((100% - 40vw));
+}
+
+fieldset {
+    border: none;
+    margin-inline:40px;
+    margin-bottom: 20px;
+}
+
+input {
+    background-color: #2b0955;
+    border-radius: 30px;
+    border:#fafafa 1.5px solid;
+    color:#fafafa;
+    height:40px;
+    width:340px;
+    padding:10px;
+    font-family: 'Museum Bible', serif;
+    font-size: 25px;
+    margin-top:30px;
+    margin-inline: 30px;
+}
+
+.form-main label {
+    position: absolute;
+    margin-inline: 45px;
 }
 
 .form-main p {
+    text-align: center;
+    margin: 50px;
+    letter-spacing: 0.2;
+}
+
+input[type='password']:user-invalid {
+    border: red 1.5px solid;
+}
+
+input:focus {
+    border: #b897f9 1.5px solid !important
+}
+
+button {
+    background-color: #5e17eb;
+    color: #fafafa;
+    border-radius: 30px;
+    padding-inline:20px;
+    border: none;
+    width:160px;
+    height: 55px;
+    font-weight: 500;
+    font-family: 'Museum Bible', serif;
     font-size: 30px;
+    text-align: center;
+    letter-spacing: 0.2px;
+}
+
+.btn-section a {
+    color:#864aff;
+    font-weight: 700;
+    letter-spacing: 0.2px;
+    align-self: end;
+    padding-left:8px;
+}
+
+.btn-section a, .btn-section p {
+    max-width: fit-content;
+    flex-direction: row;
+    margin: unset;
+
+}
+
+.btn-section p {
+    letter-spacing: 0.2;
+}
+
+.btn-section {
+    display: flex;
+    flex-direction: row;
+    margin: 30px;
+    margin-left: 90px;
+    align-items: center;
+    justify-content: baseline;
+    gap:20px;
+}
+
+.login {
+    display:flex;
+    flex-direction: row;
 }
