@@ -31,12 +31,13 @@ body {
 }
 
 .logo {
-    width:75px;
+    width:70px;
     margin-top:10px;
 }
 
 .brand {
     width:400px;
+    padding-bottom: 6px;
 }
 
 .amethyst {
