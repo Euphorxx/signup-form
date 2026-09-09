@@ -29,7 +29,9 @@
                     <label for="email" >E-mail</label>
                     <input type="email" id="email" name="userEmail">
                     <label for="phone-num" >Phone Number</label>
-                    <input type="tel" id="phone-num" name="phoneNum">
+                    <input type="tel" id="phone-num" name="phoneNum" pattern="^[6-9]\d{9}$">
+                
+                    <!-- Source for regex pattern - https://stackoverflow.com/a/3813226 -->
                 </fieldset>
                 
                 <fieldset>
