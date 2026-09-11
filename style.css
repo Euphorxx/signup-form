@@ -53,12 +53,13 @@ body {
 }
 
 .form-main {
+    display: flex;
     width: calc((100% - 40vw));
     position: absolute;
     justify-self: center;
     flex-direction: column;
     font-size: 30px;
-}
+} 
 
 .form {
     width: calc((100% - 40vw));
@@ -101,7 +102,7 @@ label[for="last-name"], label[for="phone-num"], label[for="confirm-pass"] {
 .form-main p {
     text-align: center;
     margin: 50px;
-    letter-spacing: 0.2;
+    letter-spacing: 0.2px;
 }
 
 input[type='password']:user-invalid {
@@ -109,7 +110,7 @@ input[type='password']:user-invalid {
     content:"Use at least 8 characters with a letter and a number."
 }
 
-label[for='pass']::after, label[for='confirm-pass']::after {
+label[for='email']::after, label[for='first-name']::after, label[for='pass']::after, label[for='confirm-pass']::after {
  content:" *";
  color:red;
  font-size:20px;
@@ -170,7 +171,8 @@ button:focus {
     align-items: center;
     justify-content: baseline;
     gap:20px;
-    
+    justify-content: center;
+    margin-right:240px;
 }
 
 .login {
