@@ -43,8 +43,8 @@ body {
 .amethyst {
     width:200px;
     position: absolute;
-    bottom: 0px;
-    right:30px;
+    inset-block-end:0;
+    inset-inline-end:30px;
 }
 
 .form-section {
@@ -53,11 +53,11 @@ body {
 }
 
 .form-main {
+    width: calc((100% - 40vw));
+    position: absolute;
     justify-self: center;
     flex-direction: column;
     font-size: 30px;
-    font-weight: 500;
-
 }
 
 .form {
@@ -65,12 +65,14 @@ body {
 }
 
 fieldset {
+    display: flex;
+    justify-content: center;
     border: none;
-    margin-inline:40px;
     margin-bottom: 20px;
 }
 
 input {
+    display: flex;
     background-color: #2b0955;
     border-radius: 30px;
     border:#fafafa 1.5px solid;
@@ -87,7 +89,13 @@ input {
 
 .form-main label {
     position: absolute;
-    margin-inline: 45px;
+    display: flex;
+    width:300px;
+    margin-right:400px;
+}
+
+label[for="last-name"], label[for="phone-num"], label[for="confirm-pass"] {
+    margin-left:800px;
 }
 
 .form-main p {
@@ -158,10 +166,11 @@ button:focus {
     display: flex;
     flex-direction: row;
     margin: 30px;
-    margin-left: 90px;
+    padding-inline:22px;
     align-items: center;
     justify-content: baseline;
     gap:20px;
+    
 }
 
 .login {
